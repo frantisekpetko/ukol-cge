@@ -1,38 +1,132 @@
-.App {
-  text-align: center;
+@import '@fontsource/roboto/300.css';
+@import '@fontsource/roboto/400.css';
+@import '@fontsource/roboto/500.css';
+@import '@fontsource/roboto/700.css';
+
+html {
+    height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    background-image: url('https://static.vecteezy.com/system/resources/previews/000/693/323/original/abstract-gradient-pink-purple-stripes-on-purple-background-vector.jpg');
+    background-size: cover;
+    height: 100%;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-attachment: fixed;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.table-image {
+    width: 25px;
+    height: 25px;
+    margin-right: 2rem;
+    margin-left: 0.5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.heading {
+
+    margin-bottom: 0 !important
+
 }
 
-.App-link {
-  color: #61dafb;
+.heading-container {
+   
+    margin-bottom: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.heading-image {
+   width: 2rem;
+   height: 2rem;
+   margin-right: 0.5rem;
+
+}
+
+.detail-icon {
+    cursor: pointer;
+}
+
+.red {
+    color: red !important;
+}
+
+.green {
+    color: green !important;
+}
+
+.eye-icon-link {
+    color: black;
+}
+
+.chart-info {
+    width: 30%;
+    padding: 0 2rem 0 2rem;
+    height: 100%;
+    margin-top: 1rem;
+ 
+}
+
+.chart-container {
+    display: flex;
+    width: 90% !important;
+    height: 100%;
+    flex-direction: row;
+
+    align-content: center;
+    justify-content: center;
+    padding: 1rem 0 1rem 0;
+    margin-top: 2rem;
+}
+
+.chart {
+    width: 70% !important;
+    height: 100% !important;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    padding: 1rem;
+}
+.space-bottom-customized {
+    padding-bottom: 0.5rem;
+}
+
+.go-back-btn {
+    margin-left: 5% !important;
+}
+
+.list-heading {
+    margin-bottom: 1rem !important;
+    color: white;
+}
+
+@media only screen and (max-width: 1100px) {
+
+    body {
+        overflow-y: visible;
+    }
+
+    .heading-container {
+        margin-top: 2rem;
+    }
+
+    .chart-container {
+        flex-direction: column;
+        width: 80% !important;
+        align-items: center;
+    }
+
+    .chart {
+        width: 90% !important;
+    }
+
+    .chart-info {
+        width: 60%;
+    }
+
+    .go-back-btn {
+        margin-left: 10% !important;
+    }
+   
 }
